@@ -1,0 +1,28 @@
+<hibernate-configuration xmlns="http://www.hibernate.org/xsd/orm/cfg">
+
+
+    <session-factory>
+    <property name="hibernate.connection.driver_class">com.mysql.cj.jdbc.Driver</property>
+    <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/hibernate9.30</property>
+    <property name="hibernate.connection.username">root</property>
+    <property name="hibernate.connection.password">sql123</property>
+
+
+    <!-- Specify dialect -->
+    <property name="hibernate.dialect">org.hibernate.dialect.MySQL8Dialect</property>
+
+    <!-- Drop and re-create the database schema on startup -->
+    <property name="hibernate.hbm2ddl.auto">update</property>
+
+    <!-- Echo all executed SQL to stdout -->
+    <property name="hibernate.show_sql">true</property>
+
+    <!--        &lt;!&ndash; Mention annotated class &ndash;&gt;-->
+    <!--        <mapping class="Table.Person"/>-->
+
+</session-factory>
+
+
+
+
+</hibernate-configuration>
